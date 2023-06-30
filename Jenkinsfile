@@ -17,6 +17,7 @@ node{
 
             steps {
                 sh "sudo chown root:jenkins /run/docker.sock"
+                sh 'sudo docker pull python:3.5.1'
             }
 
         }

@@ -10,15 +10,7 @@ node{
             && rm -r docker docker-17.04.0-ce.tgz'
         }
     
-        stage("Fix the permission issue") {
 
-            agent any
-
-            steps {
-                sh "sudo chown root:jenkins /run/docker.sock"
-            }
-
-        }
     
         stage ('Build image') {
             app = docker.build("kahina/nginx")

@@ -13,4 +13,4 @@ RUN chmod +x /usr/local/bin/docker
 USER jenkins
 
 RUN sed -i 's/nginx/kahina/g' /usr/share/nginx/html/index.html
-EXPOSE 83
+EXPOSE 80
